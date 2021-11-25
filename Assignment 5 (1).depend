@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1637802221 source:e:\c++\codeblocks code\as2 sec 2\assignment 5 (1)\assignment 5 (1)\main.cpp
+	<iostream>
+	<cassert>
+	<vector>
+	<fstream>
+	"tree.h"
+
+1637802206 e:\c++\codeblocks code\as2 sec 2\assignment 5 (1)\assignment 5 (1)\tree.h
+
+1637802784 source:e:\c++\codeblocks code\as2 sec 2\assignment 5 (1)\assignment 5 (1)\tree.cpp
+	<iostream>
+	<cassert>
+	<vector>
+	"tree.h"
+
