@@ -1,6 +1,9 @@
 #ifndef TREE_H_INCLUDED
 #define TREE_H_INCLUDED
+#include <iostream>
+#include <vector>
 
+using namespace std;
 
 class Tree{
 
