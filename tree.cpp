@@ -8,7 +8,7 @@ using namespace std;
 
 
 void Tree:: printMorse(){
-    cout<<"\nCoded Message : ";
+
     for (int i = 0; i<morseCode.size(); i++){
         cout<<morseCode[i]<<" ";
     }
@@ -17,7 +17,6 @@ void Tree:: printMorse(){
 
 
 void Tree::decodeMorse(struct treeNode *node){
-    cout<<"\nDecoded Message : ";
     if (node != NULL){
 
     for (int k= 0; k<morseCode.size();k++){
