@@ -165,4 +165,3 @@ void Tree::addToTree(string alphabet, string morse_code)
             addToTree(root, alphabet, morse_code);              // if node is null it root node
     }
 }
-
