@@ -20,7 +20,6 @@ decoded message as well.
 // Including supporting libraries
 #include <iostream>
 #include<fstream>
-#include<conio.h>
 using namespace std;
 
 
@@ -64,7 +63,6 @@ int main() {
     cout<<"\n\nDecoded Message : ";
     tree.decodeMorse(tree.getRootNode());           // Decoding morse code to its respective alphabets
 
-    cout<<"\n\nPress any key to exit.";
-    getch();
+    cout<<"\n";
 	return 0;
 }
