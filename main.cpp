@@ -17,8 +17,6 @@ decoded message as well.
 
 */
 
-
-
 // Including supporting libraries
 #include <iostream>
 #include<fstream>
@@ -28,6 +26,15 @@ using namespace std;
 
 // Including header file
 #include "tree.h"
+
+
+/**
+ *  @file   main.cpp
+ *  @brief  It is the main program file. It drives the whole application and interacts with the user inputs.
+ *  @author Harpreet Singh
+ *  @date   23/11/2021
+ *  @param none
+**/
 
 int main() {
 

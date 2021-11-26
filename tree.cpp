@@ -5,8 +5,6 @@
  *  @date   23/11/2021
  ***********************************************/
 
-
-
 // Including header files
 #include "tree.h"
 

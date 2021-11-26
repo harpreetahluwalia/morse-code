@@ -2,47 +2,48 @@
 \mbox{\hyperlink{main_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022 \textcolor{comment}{// Including supporting libraries}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include <iostream>}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024 \textcolor{preprocessor}{\#include<fstream>}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025 \textcolor{preprocessor}{\#include<conio.h>}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026 \textcolor{keyword}{using namespace }std;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029 \textcolor{comment}{// Including header file}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{tree_8h}{tree.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}\mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00032}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00033}00033 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00034}00034     cout<<\textcolor{stringliteral}{"{}\(\backslash\)n******************** Assignment 5 *************************\(\backslash\)n"{}};}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00035}00035     \mbox{\hyperlink{class_tree}{Tree}} tree;          \textcolor{comment}{// Creating class Tree object}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00036}00036     ifstream morseFile(\textcolor{stringliteral}{"{}morsecode.txt"{}});}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00037}00037     \textcolor{keywordtype}{string} morse\_code;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00038}00038     \textcolor{keywordtype}{string} alphabet;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00039}00039     \textcolor{keywordtype}{string} line;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}00040     \textcolor{keywordtype}{int} pos = 1;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041     tree.\mbox{\hyperlink{class_tree_aa4daa61a341aadc9ab234786c5af0ae5}{addToTree}}(\textcolor{stringliteral}{"{}ROOT"{}}, \textcolor{stringliteral}{"{}"{}});     \textcolor{comment}{// Inserting empty root node to tree}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00042}00042 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00043}00043     \textcolor{keywordflow}{while}(getline(morseFile, line))\{        \textcolor{comment}{// Reading file}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00044}00044         \textcolor{keywordtype}{string} morse\_code = line.substr(pos+1);}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00045}00045         \textcolor{keywordtype}{string} alphabet = string(1,line[0]);}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00046}00046         tree.\mbox{\hyperlink{class_tree_aa4daa61a341aadc9ab234786c5af0ae5}{addToTree}}(alphabet, morse\_code);       \textcolor{comment}{// Inserting nodes to tree}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00047}00047     \}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020 \textcolor{comment}{// Including supporting libraries}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022 \textcolor{preprocessor}{\#include<fstream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023 \textcolor{preprocessor}{\#include<conio.h>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027 \textcolor{comment}{// Including header file}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{tree_8h}{tree.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00039}\mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00039}} \textcolor{keywordtype}{int} \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}() \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041     cout<<\textcolor{stringliteral}{"{}\(\backslash\)n******************** Assignment 5 *************************\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00042}00042     \mbox{\hyperlink{class_tree}{Tree}} tree;          \textcolor{comment}{// Creating class Tree object}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00043}00043     ifstream morseFile(\textcolor{stringliteral}{"{}morsecode.txt"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00044}00044     \textcolor{keywordtype}{string} morse\_code;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00045}00045     \textcolor{keywordtype}{string} alphabet;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00046}00046     \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00047}00047     \textcolor{keywordtype}{int} pos = 1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00048}00048     tree.\mbox{\hyperlink{class_tree_aa4daa61a341aadc9ab234786c5af0ae5}{addToTree}}(\textcolor{stringliteral}{"{}ROOT"{}}, \textcolor{stringliteral}{"{}"{}});     \textcolor{comment}{// Inserting empty root node to tree}}
 \DoxyCodeLine{\Hypertarget{main_8cpp_source_l00049}00049 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00050}00050     cout<<\textcolor{stringliteral}{"{}\(\backslash\)nEnter Message : "{}};}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00051}00051     \textcolor{keywordtype}{string} input;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}00052     getline(cin, input);}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053     tree.\mbox{\hyperlink{class_tree_a5af8c95b5c58abe77f5a50f57c21aa2d}{to\_Morse}}(tree.\mbox{\hyperlink{class_tree_af0f2cdb1cd6157079f69847276bb9ee1}{getRootNode}}(),input);        \textcolor{comment}{// Encoding user input message to Morse code}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055     cout<<\textcolor{stringliteral}{"{}\(\backslash\)nEncoded Message : "{}};}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}00056     tree.\mbox{\hyperlink{class_tree_ad7ff585ce0848515fa4bdd5dc9c26696}{printMorse}}();}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057     cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nDecoded Message : "{}};}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058     tree.\mbox{\hyperlink{class_tree_abe8c9a5d51b9fe1b31bc7f0822bcfe83}{decodeMorse}}(tree.\mbox{\hyperlink{class_tree_af0f2cdb1cd6157079f69847276bb9ee1}{getRootNode}}());           \textcolor{comment}{// Decoding morse code to its respective alphabets}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059 }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060     cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nPress any key to exit."{}};}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}00061     getch();}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062     \textcolor{keywordflow}{return} 0;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063 \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00050}00050     \textcolor{keywordflow}{while}(getline(morseFile, line))\{        \textcolor{comment}{// Reading file}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00051}00051         \textcolor{keywordtype}{string} morse\_code = line.substr(pos+1);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}00052         \textcolor{keywordtype}{string} alphabet = string(1,line[0]);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053         tree.\mbox{\hyperlink{class_tree_aa4daa61a341aadc9ab234786c5af0ae5}{addToTree}}(alphabet, morse\_code);       \textcolor{comment}{// Inserting nodes to tree}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054     \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057     cout<<\textcolor{stringliteral}{"{}\(\backslash\)nEnter Message : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058     \textcolor{keywordtype}{string} input;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059     getline(cin, input);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060     tree.\mbox{\hyperlink{class_tree_a5af8c95b5c58abe77f5a50f57c21aa2d}{to\_Morse}}(tree.\mbox{\hyperlink{class_tree_af0f2cdb1cd6157079f69847276bb9ee1}{getRootNode}}(),input);        \textcolor{comment}{// Encoding user input message to Morse code}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062     cout<<\textcolor{stringliteral}{"{}\(\backslash\)nEncoded Message : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063     tree.\mbox{\hyperlink{class_tree_ad7ff585ce0848515fa4bdd5dc9c26696}{printMorse}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00064}00064     cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nDecoded Message : "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00065}00065     tree.\mbox{\hyperlink{class_tree_abe8c9a5d51b9fe1b31bc7f0822bcfe83}{decodeMorse}}(tree.\mbox{\hyperlink{class_tree_af0f2cdb1cd6157079f69847276bb9ee1}{getRootNode}}());           \textcolor{comment}{// Decoding morse code to its respective alphabets}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00067}00067     cout<<\textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nPress any key to exit."{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00068}00068     getch();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00069}00069     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00070}00070 \}}
 
 \end{DoxyCode}

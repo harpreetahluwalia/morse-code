@@ -36,17 +36,26 @@ class Tree{
            vector <string> morseCode;
 
     public:
-            Tree(){root = NULL;}
 
             /**
-            *
-            * Method : printMorse()
+            * Method : Tree()
             * @author Harpreet Singh
             * @date 23-11-2021
-            * @brief It prints the encoded morse code to the console.
+            * @brief Its constructor of the class and set root node to NULL.
             * @param none
+            *
             **/
+            Tree(){
+                root = NULL;}
 
+            /**
+            * Method : getRootNode()
+            * @author Harpreet Singh
+            * @date 23-11-2021
+            * @brief It returns the root node variable.
+            * @param none
+            * @return root Returns the root node variable.
+            **/
              struct treeNode* getRootNode(){
                 return root;
             };
