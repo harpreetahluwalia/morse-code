@@ -64,7 +64,6 @@ void Tree::decodeMorse(struct treeNode *node){
             }
         else
         {
-
             if (tempNode->right != NULL)        // If there is dash - in code, it will check for right node and move right.
                 tempNode = tempNode->right;
             else
@@ -75,19 +74,32 @@ void Tree::decodeMorse(struct treeNode *node){
         }
     cout<<tempNode->alphabet;           // Printing the alphabet
     }
-
+}
 }
 
-}
 
-
+/**
+ * Method : to_Morse()
+ * @author Harpreet Singh
+ * @date 23-11-2021
+ * @brief It encodes the string message to morse code.
+ * @param node It is a node of structure treeNode
+ * @param line It is string representing user input that needs to be converted to morse code.
+*/
 void Tree::to_Morse(struct treeNode *node,string line){
     for (int i=0; i<line.length(); i++){
         encode(node,string(1, tolower(line[i])));       // calling the encode function
         }
 }
 
-
+/**
+ * Method : encode()
+ * @author Harpreet Singh
+ * @date 23-11-2021
+ * @brief It encodes the alphabets to their respective morse code.
+ * @param node It is a node of structure treeNode
+ * @param alphabet It represents an alphabet which needs to be converted to its respective morse code.
+*/
 void Tree::encode(struct treeNode *root, string alphabet){
 
     if (root != NULL){              // if root node is null
@@ -104,6 +116,15 @@ void Tree::encode(struct treeNode *root, string alphabet){
     }
 }
 
+/**
+ * Method : addToTree()
+ * @author Harpreet Singh
+ * @date 23-11-2021
+ * @brief It inserts the node to the tree based on the node passed
+ * @param node It is a node of structure treeNode
+ * @param alphabet It represents an alphabet which needs to be converted to its respective morse code.
+ * @param morse_code string holds morse code for its respective alphabet
+*/
 void Tree::addToTree(treeNode *&tempNode, string alphabet, string morse_code)
 {
     if(tempNode == NULL)            // if passed node is null, add new node.
@@ -115,6 +136,14 @@ void Tree::addToTree(treeNode *&tempNode, string alphabet, string morse_code)
     }
 }
 
+/**
+ * Method : addToTree()
+ * @author Harpreet Singh
+ * @date 23-11-2021
+ * @brief It is overloaded addToTree function which inserts alphabet and morse code to tree.
+ * @param alphabet It represents an alphabet which needs to be converted to its respective morse code.
+ * @param morse_code string holds morse code for its respective alphabet
+*/
 void Tree::addToTree(string alphabet, string morse_code)
 {
     treeNode **tempNode = &root;            // creating treeNode pointer and refering root node
@@ -135,7 +164,7 @@ void Tree::addToTree(string alphabet, string morse_code)
         addToTree(*tempNode, alphabet, morse_code);         // recursively calls the addToTree function
     }
     else {
-            addToTree(root, alphabet, morse_code);
+            addToTree(root, alphabet, morse_code);              // if node is null it root node
     }
 }
 
